@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,400;1,900&display=swap');
+
+$primary: #6638F0;
+$secondary: #5CC9F5;
+$containerstroke: #EEECF1;
+
+html {
+  font-family: 'Poppins';
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  color: aliceblue;
+  background-color: rgb(102, 56, 240);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.563rem 0.875rem;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 0.25rem;
+  display: block;
+}
+
+.football {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 37.75rem;
+  height: 13.938rem;
+  left: 50%;
+  top: 50%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #f9f8fb 50%), #ffffff;
+  border: 1px solid $containerstroke;
+  border-radius: 0.25rem;
+  font-family: 'Poppins';
+  padding: 1.25rem;
+  transform: translate(-50%, -50%);
+
+  .content {
+    justify-content: center;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+
+  .button {
+    text-align: left;
+
+    a {
+      margin-left: 1.25rem;
+      text-decoration: none;
+      color: #6638f0;
+    }
+  }
+}
+
+.basketball {
+  display: flex;
+  align-items: center;
+  width: 47rem;
+  height: 33.938rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  margin: auto;
+  font-family: Poppins;
+  position: fixed;
+  transform: scale(0);
+ 
+  transition: 4ms;
+
+  .gradient {
+    width: 23.438rem;
+    background: $primary;
+    background-image: linear-gradient(154.5deg, $primary 0%, $secondary 100%);
+    height: 100%;
+  }
+
+  .popup {
+    position: relative;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(249, 248, 251, 1) 80%);
+    padding: 0.563rem 0.875rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    width: 19.563rem;
+    padding: 2.313rem;
+
+    h3 {
+      text-align: left;
+      font-size: 1.5rem;
